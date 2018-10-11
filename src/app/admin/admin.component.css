@@ -1,0 +1,133 @@
+
+
+
+.example-card {
+
+
+  width: 500px;
+  
+  
+  height: 500px;
+  
+  
+  margin-left: 
+  
+  500px;
+  
+  
+  margin-top: 30px;
+  
+  
+  background: rgb(1,
+  
+  2, 8);
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  .header{
+  
+  
+  background: rgb(250,
+  
+  251, 252);
+  
+  
+  color: rgb(7,
+  
+  8, 7);
+  
+  
+  
+  
+  }
+  
+  
+  .md-form{
+  
+  
+  font-size: 25px;
+  
+  
+  font:bold;
+  
+  
+  font-style: italic;
+  
+  
+  color: rgb(252,
+  
+  252, 248);
+  
+  
+  }
+  
+  
+  .buttn{
+  
+  
+  background: rgb(107,
+  
+  183, 235);
+  
+  
+  margin-left: 
+  157px;
+  
+  margin-right: 
+  254px;
+  
+  
+  }
+  
+  
+  .placeholder{
+  
+  
+  color: rgb(253,
+  
+  249, 253);
+  
+  
+  font-size: 25px;
+  
+  
+  font: bold;
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  .text-center{
+  
+  
+  color: #f5f0f0;
+  
+  
+  }
+  
+  
+  
+  .alert1{
+  
+  font-size: 14px;
+  
+  color: red
+  
+  }
+  
+  .link{
+  
+  color: blue
+  
+  }
+  

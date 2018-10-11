@@ -1,0 +1,79 @@
+<!-- <<<<<<<<<<BACK BUTTON>>>>>>>>>>>>> -->
+<button (click)="OnClick()" mat-button>Back</button>
+<!-- <<<<<<<<<>>>>>>>>>>>>>> -->
+
+<!-- <<<<<<<<<<Total Items>>>>>>>>>>>>>> -->
+<p class="totalHeader">
+  Total {{length}} Items are in cart
+</p>
+<!-- <<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <<<<<<<<<<Cart Table>>>>>>>>>>>>> -->
+<table *ngIf="cart.length>0">
+  <thead>
+    <tr class="table100-head">
+      <th class="column4">Name</th>
+      <th class="column4">Price</th>
+      <th class="column4">Quantity</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let data of cart">
+    <td class="column4">{{data.itemName}}</td>
+    <td class="column4">${{data.rate}}</td>
+    <td>
+      <button class="quantityButton" mat-button (click)="decreaseQuantity(data)">Remove</button>
+      <span class="quantity">x{{data.quantity}}</span>
+      <button class="quantityButton" mat-button (click)="increaseQuantity(data)">Add</button>
+    </td>
+  </tr>
+  <tr>
+    <td class="totalAmount">Total</td>
+    <td class="totalAmount">${{total}}</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td><button class="placeOrder" mat-button (click)="placeOrder()">Place Order</button></td>
+  </tr>
+</table>
+
+
+
+
+
+
+<!-- <table>
+  <thead>
+    <tr class="table100-head">
+      <th class="column1">Date</th>
+      <th class="column2">Order ID</th>
+      <th class="column3">Name</th>
+      <th class="column4">Price</th>
+      <th class="column5">Quantity</th>
+      <th class="column6">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="column1">2017-09-29 01:22</td>
+      <td class="column2">200398</td>
+      <td class="column3">iPhone X 64Gb Grey</td>
+      <td class="column4">$999.00</td>
+      <td class="column5">1</td>
+      <td class="column6">$999.00</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<!-- <mat-table>
+  <mat-header-row>
+    <mat-header-cell>One</mat-header-cell>
+    <mat-header-cell>Two</mat-header-cell>
+    <mat-header-cell>Three</mat-header-cell>
+  </mat-header-row>
+  <mat-row *ngFor="let item of cart;">
+    <mat-cell>{{item.one}}</mat-cell>
+    <mat-cell>{{item.two}}</mat-cell>
+    <mat-cell>{{item.three}}</mat-cell>
+  </mat-row>
+</mat-table> -->

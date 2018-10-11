@@ -1,0 +1,299 @@
+
+<!-- Material form login -->
+
+
+
+<mat-card
+class="example-card">
+
+
+
+<div 
+class="header">
+
+
+
+<mat-card-header>
+
+
+
+<h1>
+
+
+
+<strong>Sign in</strong>
+
+
+
+</h1>
+
+
+
+</mat-card-header>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--Card content-->
+
+
+
+<mat-card-content
+class="px-lg-5 pt-0">
+
+
+
+
+
+<!-- Form -->
+
+
+
+<form 
+class="text-center" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+
+
+
+
+
+
+<!-- Email -->
+
+
+
+<div 
+class="md-form">
+
+
+
+<mat-form-field>
+
+
+
+<input
+class="placeholder"
+matInput placeholder="LoginId" #refid
+class="form-control"
+formControlName="email">
+
+
+
+</mat-form-field>
+
+<span 
+class="alert1" *ngIf="profileForm.controls['email'].hasError('required')
+&& profileForm.controls['email'].touched ">
+
+<!-- <div *ngIf="fNameRef.errors && (fNameRef.dirty || fNameRef.touched)" class="alert alert-danger"> -->
+
+<span 
+style="font-weight:bold" *ngIf="profileForm.controls['email'].hasError('required')"
+class="alert alert-danger">
+
+*Please enter a email
+
+</span>
+
+
+
+</span>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Password -->
+
+
+
+<div 
+class="md-form">
+
+
+
+<mat-form-field>
+
+
+
+<input
+class="placeholder"
+matInput placeholder="password" #refpass
+class="form-control"
+formControlName="password">
+
+
+
+</mat-form-field>
+
+<span 
+class="alert1" *ngIf="profileForm.controls['password'].hasError('required')
+&& profileForm.controls['password'].touched ">
+
+<!-- <div *ngIf="fNameRef.errors && (fNameRef.dirty || fNameRef.touched)" class="alert alert-danger"> -->
+
+<span *ngIf="profileForm.controls['password'].hasError('required')"
+class="alert alert-danger">
+
+*Please enter password
+
+</span>
+
+
+</span>
+
+
+
+
+</div>
+
+
+
+
+
+<div 
+class="d-flex justify-content-around">
+
+
+
+<div>
+
+
+
+<!-- Remember me -->
+
+
+
+
+
+<mat-checkbox
+class="example-margin">Remember me</mat-checkbox>
+
+
+
+</div>
+
+
+
+<div 
+class="link">
+
+
+
+<!-- Forgot password -->
+
+
+
+<a 
+href="register">Forgot password?</a>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<br>
+
+
+
+
+
+<!-- Sign in button -->
+
+
+
+<div 
+class=buttn>
+
+
+
+<button
+mat-button type="submit" [disabled]="!profileForm.valid">Submit</button>
+
+</div>
+
+
+
+<br>
+
+
+
+
+
+<!-- Register -->
+
+
+
+<p>You Want Quit?
+
+
+
+<a 
+href="home">Back</a>
+
+
+
+</p>
+
+
+
+
+
+</form>
+
+
+
+<!-- Form -->
+
+
+
+
+
+</mat-card-content>
+
+
+
+
+
+</mat-card>
+
+
+
+<!-- Material form login -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

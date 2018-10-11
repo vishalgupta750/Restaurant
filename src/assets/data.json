@@ -1,0 +1,34 @@
+[
+    {
+        "item_Id": 101,
+        "item_Name": "Bread Basket",
+        "rate": 120,
+        "category": "snacks",
+        "quantity": 1,
+        "description": "Assortment of fresh baked fruit breads and muffins 5.50"
+    },
+    {
+        "item_Id": 102,
+        "item_Name": "Honey almond",
+        "rate": 10,
+        "category": "snacks",
+        "quantity": 1,
+        "description": "Natural cereal of honey toasted oats, raisins, almonds and dates 7.00"
+    },
+    {
+        "item_Id": 103,
+        "item_Name": "Belgian Waffle",
+        "rate": 70,
+        "category": "snacks",
+        "quantity": 1,
+        "description": "Vanilla flavored batter with malted flour 7.50"
+    },
+    {
+        "item_Id": 104,
+        "item_Name": "Scrambled eggs",
+        "rate": 30,
+        "category": "snacks",
+        "quantity": 1,
+        "description": "Scrambled eggs, roasted red pepper and garlic, with green onions 7.50"
+    }
+]
